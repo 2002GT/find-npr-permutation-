@@ -1,0 +1,15 @@
+class Solution{
+public:
+    long long nPr(int n, int r){
+        
+       long factN = 1 , factR = 1;
+      for(int i =1; i<= n ; i++)
+      factN*=i;
+      
+      for(int i = 1; i<=n-r; i++)
+      factR*=i;
+      
+      return factN/factR;
+        
+    }
+};
